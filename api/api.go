@@ -18,8 +18,6 @@ var movesMade uint8
 var ai_player uint8
 var field [9]uint8
 
-// var db, _ = gorm.Open("mysql", "root:@tcp(127.0.0.1:3306)/todolist-go")
-
 func Healtz(w http.ResponseWriter, r *http.Request) {
 	log.Info("API Health is OK")
 	w.Header().Set("Content-Type", "application/json")
@@ -33,8 +31,6 @@ func init() {
 }
 
 func main() {
-	// defer db.Close()
-
 	log.Info("Starting TicTacToe API server")
 	router := mux.NewRouter()
 	router.HandleFunc("/healtz", Healtz).Methods("GET")
