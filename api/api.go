@@ -7,9 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
-	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/rs/cors"
 	log "github.com/sirupsen/logrus"
 )
